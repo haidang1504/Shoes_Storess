@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SHOES TORES - Cửa hàng giày trực tuyến" />
+    <title>SHOES TORES | Online Shoes Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">MIỄN PHÍ VẬN CHUYỂN CHO ĐƠN HÀNG TỪ 1.000.000đ</div>
+    <header class="header">
+      <a class="logo" href="#home">SHOES <span>TORES</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+        ☰
+      </button>
+      <nav id="navMenu">
+        <a href="#home">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="searchFocus" aria-label="Tìm kiếm">
+          ⌕
+        </button>
+        <button class="cart-button" id="openCart">
+          Giỏ hàng <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">BỘ SƯU TẬP MỚI 2026</p>
+          <h1>BƯỚC ĐI<br /><span>THEO PHONG CÁCH</span></h1>
+          <p>
+            Khám phá những đôi giày phù hợp với cá tính và hành trình của bạn.
+          </p>
+          <a class="primary-btn" href="#products">KHÁM PHÁ NGAY</a>
+        </div>
+        <div class="hero-art">
+          <div class="hero-circle"></div>
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=85"
+            alt="Giày sneaker đỏ nổi bật"
+          />
+          <span class="hero-tag">YOUR STYLE<br />YOUR WAY</span>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div><b>🚚 Giao hàng nhanh</b><small>Giao hàng toàn quốc</small></div>
+        <div><b>✓ Sản phẩm chọn lọc</b><small>Thông tin rõ ràng</small></div>
+        <div>
+          <b>↺ Hỗ trợ đổi size</b><small>Theo chính sách cửa hàng</small>
+        </div>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-heading">
+          <div><h2>Nổi bật</h2></div>
+          <p>Khám phá những mẫu giày được yêu thích tại SHOES TORES.</p>
+        </div>
+        <div
+          class="category-tabs"
+          id="categoryTabs"
+          role="tablist"
+          aria-label="Danh mục giày"
+        >
+          <button
+            class="category-tab active"
+            data-category="Sneaker"
+            role="tab"
+            aria-selected="true"
+          >
+            Giày Sneaker
+          </button>
+          <button
+            class="category-tab"
+            data-category="Thể thao"
+            role="tab"
+            aria-selected="false"
+          >
+            Giày Thể Thao
+          </button>
+          <button
+            class="category-tab"
+            data-category="Thời trang"
+            role="tab"
+            aria-selected="false"
+          >
+            Giày Thời Trang
+          </button>
+          <button
+            class="category-tab"
+            data-category="Chạy bộ"
+            role="tab"
+            aria-selected="false"
+          >
+            Giày Chạy Bộ
+          </button>
+          <button
+            class="category-tab"
+            data-category="Casual"
+            role="tab"
+            aria-selected="false"
+          >
+            Giày Casual
+          </button>
+        </div>
+        <div class="toolbar">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Tìm tên giày..."
+            aria-label="Tìm sản phẩm"
+          />
+          <select id="categoryFilter" aria-label="Lọc danh mục">
+            <option value="all">Tất cả danh mục</option>
+            <option value="Sneaker">Sneaker</option>
+            <option value="Thể thao">Giày thể thao</option>
+            <option value="Thời trang">Giày thời trang</option>
+          </select>
+          <select id="sortSelect" aria-label="Sắp xếp">
+            <option value="default">Sắp xếp mặc định</option>
+            <option value="low">Giá thấp đến cao</option>
+            <option value="high">Giá cao đến thấp</option>
+            <option value="name">Tên A-Z</option>
+          </select>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-message" id="emptyMessage" hidden>
+          Không tìm thấy sản phẩm phù hợp.
+        </p>
+      </section>
+
+      <section class="promo" id="about">
+        <div>
+          <p class="eyebrow">VỀ SHOES TORES</p>
+          <h2>PHONG CÁCH BẮT ĐẦU TỪ ĐÔI GIÀY</h2>
+          <p>
+            SHOES TORES mang đến không gian mua sắm giày trực tuyến tiện lợi.
+            Chúng tôi hướng đến trải nghiệm xem sản phẩm rõ ràng, lựa chọn dễ
+            dàng và phong cách năng động.
+          </p>
+        </div>
+        <div class="promo-mark">ST<span>.</span></div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <h2>ĐỒNG HÀNH CÙNG SHOES TORES</h2>
+        <p>Liên hệ với cửa hàng để được hỗ trợ về sản phẩm và đơn hàng.</p>
+        <a href="mailto: support@shoestores.example" class="outline-btn"
+          >GỬI EMAIL</a
+        >
+        <small
+          >Địa chỉ email minh họa – hãy thay bằng email thật trước khi công bố
+          website.</small
+        >
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo footer-logo" href="#home">SHOES <span>TORES</span></a>
+      <p>ONLINE SHOES STORE · STEP INTO YOUR STYLE</p>
+      <p>© 2026 SHOES TORES. Website phục vụ mục đích học tập.</p>
+    </footer>
+
+    <div class="modal-backdrop" id="productModal" aria-hidden="true">
+      <div class="modal product-modal">
+        <button class="close-btn" data-close="productModal" aria-label="Đóng">
+          ×
+        </button>
+        <div id="productDetail"></div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="cartModal" aria-hidden="true">
+      <div class="modal cart-modal">
+        <button class="close-btn" data-close="cartModal" aria-label="Đóng">
+          ×
+        </button>
+        <h2>GIỎ HÀNG CỦA BẠN</h2>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+          <span>Tổng cộng</span><strong id="cartTotal">0đ</strong>
+        </div>
+        <button class="primary-btn full-btn" id="checkoutBtn">
+          TIẾN HÀNH ĐẶT HÀNG
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+      <div class="modal checkout-modal">
+        <button class="close-btn" data-close="checkoutModal" aria-label="Đóng">
+          ×
+        </button>
+        <h2>THÔNG TIN ĐẶT HÀNG</h2>
+        <p class="muted">Điền thông tin để tạo đơn hàng mô phỏng.</p>
+        <form id="checkoutForm">
+          <label
+            >Họ và tên<input
+              name="name"
+              required
+              minlength="2"
+              placeholder="Nguyễn Văn A"
+          /></label>
+          <label
+            >Số điện thoại<input
+              name="phone"
+              required
+              pattern="[0-9]{9,11}"
+              placeholder="09xxxxxxxx"
+          /></label>
+          <label
+            >Địa chỉ nhận hàng<textarea
+              name="address"
+              required
+              minlength="8"
+              placeholder="Số nhà, đường, phường/xã, tỉnh/thành"
+            ></textarea>
+          </label>
+          <label
+            >Ghi chú (không bắt buộc)<textarea
+              name="note"
+              placeholder="Ghi chú cho cửa hàng"
+            ></textarea>
+          </label>
+          <button class="primary-btn full-btn" type="submit">
+            XÁC NHẬN ĐẶT HÀNG
+          </button>
+        </form>
+        <p class="notice">
+          Lưu ý: Đây là chức năng mô phỏng phía trình duyệt, chưa kết nối thanh
+          toán hoặc máy chủ thật.
+        </p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
